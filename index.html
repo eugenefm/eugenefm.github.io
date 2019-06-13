@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Eugene Michasiw | Front-end Web Developer</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -14,10 +14,10 @@
 <body>
   <header>
     <div class="wrapper">
-      <h1>Eugene <span>M</span>ichasiw</h1>
+      <h1>Eugene <span class="highlight">M</span>ichasiw</h1>
       <nav id="nav">
         <ul>
-          <li><a href="#bio">Bio</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -44,18 +44,14 @@
         </div>
       </div>
     </section>
-    <section class="bio" id="bio">
+    <section class="about" id="about">
       <div class="wrapper">
-        <h2>About Me</h2>
-        <h3>Started as a marketer now I'm here.</h3>
+        <h2>About</h2>
+        <h3>From jack of all trades to master of <span class="highlight">one</span>.</h3>
         <div class="twoColumn">
           <div class="col1 textBox">
-            <p>I am a Front-end Developer with six years of marketing experience in the non-profit sector. I have spent most of my professional career working as the sole internal marketing resource of non-profit organizations. This often meant that I had to wear a lot of hats – one day you're doing media relations and the next, you're a web developer. In these roles, I managed complex Wordpress and Drupal installations along with a multitude of fundraising microsites.</p>
-            
-            <p>In the spring of 2019, I made the decision to leave my job, expand my coding skills and focus my career on web development. I attended HackerYou's Web Development Bootcamp to polish my HTML/CSS while adding JavaScript, jQuery and React to my toolkit.</p>
-            
-            <p>My years of experience managing corporate websites, along with my formal training in modern web development languages
-            and best practices make me an ideal candidate for any organization.</p>
+            <p>I am a Front-end Developer with six years of marketing experience in the non-profit sector. With this background, I have had the opportunity to build a broad toolkit of creative and technical skills. I did graphic design, email marketing, digital ads, video production, copywriting and everything in-between. In the spring of 2019, I decided to focus my career on the part of my toolkit that I loved the most – web development.</p>    
+            <p>While I have years of experience working with HTML and CSS on corporate Wordpress and Drupal websites, I attended HackerYou's Web Development Bootcamp to learn modern best-practices, web accessibility, JavaScript, jQuery and React. My broad base of experience and modern education make me an ideal candidate for any organization.</p>
           </div>
           <div class="col2">
             <h4>My Toolkit</h4>
@@ -88,7 +84,7 @@
     <section class="portfolio" id="portfolio">
       <div class="wrapper">
           <h2>Portfolio</h2>
-          <h3>What I've been working on recently.</h3>
+          <h3>Here are some projects that I'm proud of.</h3>
         <div class="container">  
           <div class="portfolioItem">
             <div class="portfolioPreview">
@@ -191,29 +187,90 @@
         </div>
       </div>
     </section>
-    <section class="contact wrapper" id="contact">
-      <h2>Contact</h2>
-      <div>
-        <form method="POST" action="https://formspree.io/eugene@michasiw.com">
-          <div class="formHalf">
-            <label for="name" class="visuallyHidden">Your name</label>
-            <input type="text" name="name" id="name" placeholder="Your name">
+    <section class="resume" id="resume">
+      <div class="wrapper">
+        <h2>Resume</h2>
+        <h3>What I've done so far.</h3>
+        <div class="twoColumn">
+          <div class="col1">
+            <h3 class="category">Experience</h3>
+            <div class="resumeItem">
+              <span class="waypoint"></span>
+              <h4>Capitalize for Kids</h4>
+              <h5>Director of Marketing <span class="secondary">Jan 2018 - Apr 2019</span></h5>
+              <h5>Marketing Manager <span class="secondary">May 2016 - Dec 2017</span></h5>
+              <p>I joined Capitalize for Kids to help transform fundraising event into a full-scale charitable organization. I directed the organization’s marketing strategy while managing vendors, freelancers, and pro-bono partners to execute on our plan.
+              <ul>
+                <li>Managed all marketing and communications for a conference that raised $1.5 million in 2018.</li>
+                <li>Co-founded the Bay Street Games – an event that raised that raised over $230,000 in 2019.</li>
+                <li>Launched a podcast featuring interviews with Canadian business leaders like Michele Romanow, Bruce Croxon and Paul Desmarais III.</li>
+                <li>Led the redesign of the organization's website and was responsible for all updates.</li>
+              </ul>
+            </div>
+            <div class="resumeItem">
+              <span class="waypoint"></span>
+              <h4>Jack.org</h4>
+              <h5>Marketing and Communications Lead <span class="secondary">May 2013 - Apr 2016</span></h5>
+              <p>I managed all marketing and communications activities at Jack.org.
+              <ul>
+                <li>Managed their website and fundraising microsites.</li>
+                <li>Managed a complete rebranding of the organization.</li>
+                <li>Launched online fundraising at Jack.org and helped raise $250,000 (200% of Goal) at their first fundraising event.</li>
+                <li>Supported the launch of the student chapters program and grew it to 100+ campus chapters with 1,000+ members.</li>
+                <li>Helped grow total revenue from $600,000 to $1.5 million in three years.</li>
+              </ul>
+            </div>
           </div>
-          <div class="formHalf">
-            <label for="email" class="visuallyHidden">Your email</label>
-            <input type="email" name="_replyto" id="_replyto" placeholder="Your email">
+          <div class="col2">
+            <h3 class="category">Education</h3>
+            <div class="resumeItem">
+              <span class="waypoint"></span>
+              <h4>HackerYou College of Technology</h4>
+              <h5>Web Development Bootcamp</h5>
+              <div class="secondary">Apr - Jun 2019</div>
+            </div>
+            <div class="resumeItem">
+              <span class="waypoint"></span>
+              <h4>Queen's University</h4>
+              <h5>BA, Honours | Film and Media</h5>
+              <div class="secondary">Sep 2009 - Apr 2013</div>
+            </div>
           </div>
-          <div class="formFull">
-            <label for="message" class="visuallyHidden">Your Message</label>
-            <textarea name="message" id="message" placeholder="Message"></textarea>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <div class="twoColumn">
+          <div class="col1">
+            <h2>Contact</h2>
+            <h3>Get in touch with me.</h3>
+            <form method="POST" action="https://formspree.io/eugene@michasiw.com">
+              <div class="formHalf">
+                <label for="name" class="visuallyHidden">Your name</label>
+                <input type="text" name="name" id="name" placeholder="Your name">
+              </div>
+              <div class="formHalf">
+                <label for="email" class="visuallyHidden">Your email</label>
+                <input type="email" name="_replyto" id="_replyto" placeholder="Your email">
+              </div>
+              <div class="formFull">
+                <label for="message" class="visuallyHidden">Your Message</label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
           </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+          <div class="col2"></div>
+        </div>
       </div>
     </section>
   </main>
+  <footer>
+    <p>Built with <i class="fas fa-heart"></i> by me.</p>
+  </footer>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
   <script src="./scripts/jquery.simple-menu.min.js"></script>
   <!-- <script src="./scripts/jquery.nav.js"></script> -->

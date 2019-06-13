@@ -29,11 +29,19 @@ h2,
 h4 {
   font-family: 'Rubik', sans-serif;
   color: $mainAccent;
-  font-size: .8rem;
   font-weight: 400;
 }
 
-p, li {
+h2 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: .8rem;
+}
+
+
+p, li, input, textarea .secondary, .category {
   font-family: 'Rubik', sans-serif;
   color: $lightText;
 }
@@ -66,9 +74,22 @@ a {
 img {
   width: 100%;
 }
+.highlight {
+  color: $mainAccent;
+}
+.secondary, .category {
+  font-weight: 400;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+
+.category {
+  font-size: 1.2rem;
+}
 
 button, .button {
   padding: 15px 40px;
+  margin-right: 20px;
   display: inline-block;
   background: $mainAccent;
   color: #fff;
@@ -76,20 +97,20 @@ button, .button {
   border-radius: 30px;
   font-size: .8rem;
   text-transform: uppercase;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 500ms cubic-bezier(.25,.8,.25,1);
   text-decoration: none;
 
   &.outline {
     background: #fff;
     color: $lightText;
     border: 1px solid $lightText;
-    &:hover {
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    &:hover, &:focus {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.23);
     }
   }
 
-  &:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  &:hover, &:focus {
+    box-shadow: 0 14px 28px rgba(255,61,79,0.25), 0 10px 10px rgba(255,61,79,0.22);
   }
 }
 .skills {
