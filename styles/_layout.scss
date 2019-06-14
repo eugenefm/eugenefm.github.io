@@ -310,20 +310,53 @@ header {
   }
   .images {
     margin-top: 50px;
+    margin-left: 8px;
+
+    figure {
+      position: relative;
+    }
+
+    figcaption {
+      position: absolute;
+      width: 260px;
+      color: $lightText;
+      font-family: 'Rubik', sans-serif;
+      background: rgba(255,255,255, 0.95);
+      padding: 10px;
+      line-height: 1.5;
+      font-size: .7rem;
+      
+    }
 
     img {
       display: block;
       width: 70%;
     }
 
-    img:first-of-type {
-      margin-left: auto;
+    figure:first-of-type {
+      figcaption {
+        left: 0;
+        top: 10px;
+        border-left: 1px solid $mainAccent;
+      }
+      img {
+        margin-left: auto;
+      }
     }
 
-    img:last-of-type {
+    figure:last-of-type {
       margin-top: -25%;
+
+      figcaption {
+        right: 0;
+        bottom: 10px;
+        border-right: 1px solid $mainAccent;
+      }
+
+      img {
       margin-right: auto;
       margin-bottom: 50px;
+      }
     }
   }
 }
