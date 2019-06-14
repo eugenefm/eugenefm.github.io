@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 section {
-  padding: 75px 0;
+  padding: 50px 0;
   min-height: 100vh;
 }
 
@@ -20,6 +20,24 @@ section {
   }
 }
 
+.socialLinks {
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-right: 20px;
+  }
+  a {
+    color: #ff3d4f;
+
+    &:hover {
+      color: lighten(#ff3d4f, 20);
+    }
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -28,13 +46,13 @@ header {
   z-index: 999;
 
   h1 {
-    margin: 10px 0;
+    margin: 15px 0;
   }
 
   .wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   nav {
@@ -52,8 +70,6 @@ header {
       
     }
     a {
-      text-transform: uppercase;
-      letter-spacing: 1px;
       color: $darkText;
       text-decoration: none;
       display: inline-block;
@@ -141,23 +157,6 @@ header {
   p{
     color: #ff3d4f;
   }
-  .socialLinks {
-    ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-right: 20px;
-    }
-    a {
-      color: #ff3d4f;
-
-      &:hover {
-        color: lighten(#ff3d4f, 20);
-      }
-    }
-  }
 }
 .about {
 
@@ -170,12 +169,12 @@ header {
   .col2 {
     display: flex;
     border: 5px solid #f6f5ff;
-    flex: 1 0 375px;
+    flex: 1 1 375px;
     flex-wrap: wrap;
   }
-  h4 {
-    flex: 0 0 100%;
-    margin: 1em 18px 0
+  h5 {
+    flex: 0 0 calc(100% - 36px);
+    margin: 1em 18px 0;
   }
 }
 .portfolio {
@@ -192,34 +191,48 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px;
+    justify-content: center;
   }
 
   .portfolioItem {
     background: #fff;
+    display: flex;
+    flex-direction: column;
     border-radius: 0px;
     padding: 20px;
     flex: 1 1 300px;
     margin: 20px;
+    max-width: 500px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
   .portfolioPreview {
     width: calc(100% + 40px);
     margin: -20px -20px 0;
   }
+  .portfolioDescription {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
   button {
     display: block;
-    margin: 10px auto;
+    margin: auto auto 10px;
   }
 
   .moreDetails {
     display: none;
+
+    p {
+      margin-top: 0;
+    }
   }
 }
 .portfolioItem.expanded {
   position: relative;
-  display: flex;
+  flex-direction: row;
   flex: 1 1 100%;
   order: -1;
+  max-width: 1600px;
 
   .portfolioPreview {
     flex: 0 0 300px;
@@ -295,13 +308,37 @@ header {
       line-height: 1.5;
     }
   }
+  .images {
+    margin-top: 50px;
+
+    img {
+      display: block;
+      width: 70%;
+    }
+
+    img:first-of-type {
+      margin-left: auto;
+    }
+
+    img:last-of-type {
+      margin-top: -25%;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+  }
 }
 .contact {
   background: url('./../assets/bgMap.png') 50% 50% / cover $backgroundShade;
 
+  .col2 {
+    display: flex;
+    flex: 1 1 100px;
+  }
+
   form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
   .formHalf {
     flex: 1 1 50%;
@@ -320,6 +357,39 @@ header {
     padding: 10px;
     border: solid 1px $lightText;
     border-radius: 0;
+    transition: all 500ms cubic-bezier(.25,.8,.25,1);
+
+    &:focus{
+      box-shadow: 0 10px 12px rgba(0,0,0,0.18);
+      border: solid 1px lighten($lightText, 40);
+    }
+  }
+  textarea {
+    min-height: 150px;
+    resize: none;
+  }
+  .socialLinks {
+    background: #fff;
+    padding: 20px;
+    flex: 1 1 100%;
+
+    h5 {
+      // color: #fff;
+    } 
+    i {
+      font-size: 1.2rem;
+      margin-right: 20px;
+    }
   }
 
+  
+}
+footer {
+  background: $darkText;
+  padding: 10px;
+
+  P {
+    text-align: center;
+    margin: 0;
+  }
 }

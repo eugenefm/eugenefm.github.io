@@ -6,23 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Eugene Michasiw | Front-end Web Developer</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik|Rufina:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css?family=Rubik|Rufina:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
   <header>
     <div class="wrapper">
       <h1>Eugene <span class="highlight">M</span>ichasiw</h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="menu">
+        <input id="burger" type="checkbox" />
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav id="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -30,12 +38,13 @@
       <div class="wrapper">
         <div class="col1">
           <h2>Front-end Web Developer</h2>
-          <h3>I build awesome websites and applications.</h3>
+          <h3>I build awesome things on the internet.</h3>
           <div class="socialLinks">
             <ul>
               <li><a href="mailto:eugene@michasiw.com"><i class="far fa-envelope"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/eugenefm/"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://twitter.com/eugene_fm"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/eugenefm/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://twitter.com/eugene_fm" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://medium.com/@eugenefm" target="_blank"><i class="fab fa-medium-m"></i></a></li>
             </ul>
           </div>
         </div>
@@ -54,13 +63,13 @@
             <p>While I have years of experience working with HTML and CSS on corporate Wordpress and Drupal websites, I attended HackerYou's Web Development Bootcamp to learn modern best-practices, web accessibility, JavaScript, jQuery and React. My broad base of experience and modern education make me an ideal candidate for any organization.</p>
           </div>
           <div class="col2">
-            <h4>My Toolkit</h4>
+            <h5>My Toolkit</h5>
             <ul class="skills">
               <li><i class="fab fa-html5"></i>HTML5</li>
               <li><i class="fab fa-css3"></i>CSS3</li>
               <li><i class="fab fa-sass"></i>Sass</li>
               <li><i class="fab fa-js-square"></i>JavaScript</li>
-              <li><i class="fas fa-columns"></i>jQuery</li>
+              <li><i class="devicon-jquery-plain"></i>jQuery</li>
               <li><i class="fab fa-react"></i>React</li>
               <li><i class="fas fa-project-diagram"></i>APIs</li>
               <li><i class="fab fa-git-square"></i>Git</li>
@@ -88,15 +97,85 @@
         <div class="container">  
           <div class="portfolioItem">
             <div class="portfolioPreview">
-              <img src="./assets/footThumb.jpg.png" alt="A mockup of the FootForward design on three screens.">
+              <img src="./assets/stockThumb.jpg.png" alt="A screenshot of the Stockup.ninja app.">
             </div>
             <div class="portfolioDescription">
-              <h4>PSD Conversion</h4>
-              <h5>FootForward</h5>
-              <p>For a HackerYou exercise we were provided with a Zeplin page design and had to convert it to a responsive single page website using HTML/CSS. To make things more challenging we were not allowed to use modern layout techniques like Flexbox and CSS Grid, instead we had to rely on Floats alone. </p>
+              <h4>ReactJS App</h4>
+              <h5>Stockup.ninja</h5>
+              <p>A simple equity research tool that displays financial data and recent news about a company.</p>
               <button class="expand">More Details</button>
               
               <div class="moreDetails">
+                <p>The app takes a user input and makes calls to multiple endpoints at two differnt APIs. ChartJS is used to display timeseries data as a chart.</p>
+                <ul class="skills">
+                  <li><i class="fab fa-html5"></i>HTML5</li>
+                  <li><i class="fab fa-css3"></i>CSS3</li>
+                  <li><i class="fab fa-react"></i>React</li>
+                  <li><i class="fas fa-project-diagram"></i>APIs</li>
+                  <li><i class="fab fa-js-square"></i>JavaScript</li>
+                </ul>
+                <a href="https://stockup.ninja/" class="button" target="_blank">Website</a>
+                <a href="https://github.com/eugenefm/eugeneMichasiwProject5" class="button outline" target="_blank">Repo</a>
+                <button class="shrink">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/meditateThumb.png" alt="A screenshot of the Meditate.ninja app.">
+            </div>
+            <div class="portfolioDescription">
+              <h4>jQuery</h4>
+              <h5>Meditate.ninja</h5>
+              <p>A simple meditation timer that plays background noise and interval tones based on the user's input.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails">
+                <p>The meditation timer works on all devices and uses the Howler.js library to ensure that mobile audio is functional.</p>
+                <ul class="skills">
+                  <li><i class="fab fa-html5"></i>HTML5</li>
+                  <li><i class="fab fa-css3"></i>CSS3</li>
+                </ul>
+                <a href="https://meditate.ninja/" class="button" target="_blank">Demo</a>
+                <a href="https://github.com/eugenefm/eugene-michasiw-project-three" class="button outline" target="_blank">Repo</a>
+                <button class="shrink">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/whoDevThumb.png" alt="A screenshot of the Meditate.ninja app.">
+            </div>
+            <div class="portfolioDescription">
+              <h4>jQuery</h4>
+              <h5>Who Wants to be a Dev</h5>
+              <p>A trivia game that pulls computer science questions from a trivia API.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails">
+                <p>I worked with a partner in paired programming style to complete this project. The app includes a countdown timer and three lifelines.</p>
+                <ul class="skills">
+                  <li><i class="fab fa-html5"></i>HTML5</li>
+                  <li><i class="fab fa-css3"></i>CSS3</li>
+                </ul>
+                <a href="https://meditate.ninja/" class="button" target="_blank">Demo</a>
+                <a href="https://github.com/eugenefm/eugene-michasiw-project-three" class="button outline" target="_blank">Repo</a>
+                <button class="shrink">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/footThumb.jpg.png" alt="A mockup of the FootForward design on three screens.">
+            </div>
+            <div class="portfolioDescription">
+              <h4>Code Conversion</h4>
+              <h5>FootForward</h5>
+              <p>For a HackerYou exercise we were provided with a Zeplin page design and had to convert it to a responsive single page website in HTML/CSS.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails">
+                <p>To make things more challenging we were not allowed to use modern layout techniques like Flexbox and CSS Grid, instead we had to rely on Floats alone.</p>
                 <ul class="skills">
                   <li><i class="fab fa-html5"></i>HTML5</li>
                   <li><i class="fab fa-css3"></i>CSS3</li>
@@ -107,83 +186,6 @@
               </div>
             </div>
           </div>
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/footThumb.jpg.png" alt="A mockup of the FootForward design on three screens.">
-            </div>
-            <div class="portfolioDescription">
-              <h4>PSD Conversion</h4>
-              <h5>FootForward</h5>
-              <p>For a HackerYou exercise we were provided with a Zeplin page design and had to convert it to a responsive single page website using HTML/CSS. To make things more challenging we were not allowed to use modern layout techniques like Flexbox and CSS Grid, instead we had to rely on Floats alone. </p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails">
-                <ul class="skills">
-                  <li><i class="fab fa-html5"></i>HTML5</li>
-                  <li><i class="fab fa-css3"></i>CSS3</li>
-                </ul>
-                <a href="https://eugenefm.github.io/eugeneMichasiwProjectOne/" class="button" target="_blank">Demo</a>
-                <a href="https://github.com/eugenefm/eugeneMichasiwProjectOne" class="button outline" target="_blank">Repo</a>
-                <button class="shrink">X</button>
-              </div>
-            </div>
-          </div>
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/footThumb.jpg.png" alt="A mockup of the FootForward design on three screens.">
-            </div>
-            <div class="portfolioDescription">
-              <h4>PSD Conversion</h4>
-              <h5>FootForward</h5>
-              <p>For a HackerYou exercise we were provided with a Zeplin page design and had to convert it to a responsive single page website using HTML/CSS. To make things more challenging we were not allowed to use modern layout techniques like Flexbox and CSS Grid, instead we had to rely on Floats alone. </p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails">
-                <p>For a HackerYou exercise we were provided with a Zeplin page design and had to convert it to a responsive single page website using HTML/CSS. To make things more challenging we were not allowed to use modern layout techniques like Flexbox and CSS Grid, instead we had to rely on Floats alone. </p>
-                <ul class="skills">
-                  <li><i class="fab fa-html5"></i>HTML5</li>
-                  <li><i class="fab fa-css3"></i>CSS3</li>
-                </ul>
-                <a href="https://eugenefm.github.io/eugeneMichasiwProjectOne/" class="button" target="_blank">Demo</a>
-                <a href="https://github.com/eugenefm/eugeneMichasiwProjectOne" class="button outline" target="_blank">Repo</a>
-                <button class="shrink">X</button>
-              </div>
-            </div>
-          </div>
-
-            
-          <!-- </div>
-          <div class="portfolioItem">
-            <div class="portfolioDescription">
-              <h3>Capitalize for Kids</h3>
-              <p>I did the initial UI/UX design of this website, led the customization of a Wordpress theme to match the design, and maintained the website on an ongoing basis.</p>
-              <ul class="skills">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Wordpress</li>
-                <li>UI/UX Design</li>
-                <li>Content Creation</li>
-              </ul>
-              <a href="https://eugenefm.github.io/eugeneMichasiwProjectOne/" class="button" target="_blank">Website</a>
-            </div>
-            <div class="portfolioPreview">
-              <img src="./assets/c4kMockup.png" alt="A mockup of the Capitalize for Kid's design on three screens.">
-            </div>
-          </div>
-          <div class="portfolioItem">
-            <div class="portfolioDescription">
-              <h3>Gallant MacDonald</h3>
-              <p>I did the initial UI/UX design for Gallant MacDonald's website as a part of a larger branding project to create a unique identity for them within the CIBC Private Wealth family. The responsive code conversion was done by Veriday.</p>
-              <ul class="skills">
-                <li>UI/UX Design</li>
-                <li>Branding</li>
-              </ul>
-              <a href="http://gallantmacdonald.com/" class="button" target="_blank">Website</a>
-            </div>
-            <div class="portfolioPreview">
-              <img src="./assets/gallantMacdonaldMockup.png" alt="A mockup of the Gallant MacDonald's website design on three screens.">
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -199,10 +201,10 @@
               <h4>Capitalize for Kids</h4>
               <h5>Director of Marketing <span class="secondary">Jan 2018 - Apr 2019</span></h5>
               <h5>Marketing Manager <span class="secondary">May 2016 - Dec 2017</span></h5>
-              <p>I joined Capitalize for Kids to help transform fundraising event into a full-scale charitable organization. I directed the organization’s marketing strategy while managing vendors, freelancers, and pro-bono partners to execute on our plan.
+              <p>I joined Capitalize for Kids to help transform a fundraising event into a full-scale charitable organization. I directed the organization’s marketing strategy while managing vendors, freelancers, and pro-bono partners to execute on our plan.
               <ul>
                 <li>Managed all marketing and communications for a conference that raised $1.5 million in 2018.</li>
-                <li>Co-founded the Bay Street Games – an event that raised that raised over $230,000 in 2019.</li>
+                <li>Co-founded the Bay Street Games – an event that raised over $230,000 in 2019.</li>
                 <li>Launched a podcast featuring interviews with Canadian business leaders like Michele Romanow, Bruce Croxon and Paul Desmarais III.</li>
                 <li>Led the redesign of the organization's website and was responsible for all updates.</li>
               </ul>
@@ -235,16 +237,20 @@
               <h5>BA, Honours | Film and Media</h5>
               <div class="secondary">Sep 2009 - Apr 2013</div>
             </div>
+            <div class="images">
+              <img src="./assets/bobPrince.jpg" alt="Bridewater Associates Co-founder Bob Prince at the 2018 Capitalize for Kids Investor's Conference." title="Bridewater Associates Co-founder Bob Prince at the 2018 Capitalize for Kids Investor's Conference.">
+              <img src="./assets/bsg.jpg" alt="Athletes competing at the 2019 Bay Street Games." title="Athletes competing at the 2019 Bay Street Games.">
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="contact" id="contact">
       <div class="wrapper">
+        <h2>Contact</h2>
+        <h3>Get in touch with me.</h3>
         <div class="twoColumn">
           <div class="col1">
-            <h2>Contact</h2>
-            <h3>Get in touch with me.</h3>
             <form method="POST" action="https://formspree.io/eugene@michasiw.com">
               <div class="formHalf">
                 <label for="name" class="visuallyHidden">Your name</label>
@@ -263,17 +269,27 @@
               </div>
             </form>
           </div>
-          <div class="col2"></div>
+          <div class="col2">
+            <div class="socialLinks">
+              <h5>Follow Me</h5>
+              <ul>
+                <li><a href="mailto:eugene@michasiw.com"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/eugenefm/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://twitter.com/eugene_fm" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://medium.com/@eugenefm" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <p>Built with <i class="fas fa-heart"></i> by me.</p>
+    <div class="wrapper">
+        <p>Built with <i class="fas fa-heart"></i> by ME.</p>
+    </div>
   </footer>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-  <script src="./scripts/jquery.simple-menu.min.js"></script>
-  <!-- <script src="./scripts/jquery.nav.js"></script> -->
   <script src="./scripts/script.js"></script>
 </body>
 </html>

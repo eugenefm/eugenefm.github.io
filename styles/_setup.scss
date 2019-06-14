@@ -41,7 +41,7 @@ h4 {
 }
 
 
-p, li, input, textarea .secondary, .category {
+p, li, input, textarea, .secondary, .category {
   font-family: 'Rubik', sans-serif;
   color: $lightText;
 }
@@ -64,7 +64,7 @@ h5 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.75;
   font-size: .9rem;
 }
 
@@ -132,4 +132,10 @@ button, .button {
     margin-right: 10px;
     color:#ff3d4f;
   }
+}
+
+.menu input, 
+.menu label, 
+.menu span {
+  display: none;
 }

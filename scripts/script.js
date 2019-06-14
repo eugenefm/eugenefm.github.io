@@ -3,8 +3,8 @@ const app = {};
 
 app.nav = () => {
   let lastId,
-    topMenu = $("#nav"),
-    topMenuHeight = topMenu.outerHeight()+13,
+    topMenu = $("header"),
+    topMenuHeight = topMenu.outerHeight()-10,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
@@ -22,6 +22,7 @@ menuItems.click(function(e){
   $('html, body').stop().animate({ 
       scrollTop: offsetTop
   }, 300);
+  $('#burger').prop('checked', false);
   e.preventDefault();
 });
 
@@ -61,6 +62,7 @@ app.init = () =>{
   $('.shrink').on('click', (e)=>{
     $(e.currentTarget).parents('.portfolioItem').removeClass('expanded');
   })
+  
   app.nav();
   // $('#nav').simpleMenu({
   //       // options here
