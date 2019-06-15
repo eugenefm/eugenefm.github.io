@@ -18,6 +18,9 @@
   .hero h3, h3 {
     font-size: 2rem;
   }
+  h5 {
+    font-size: 1rem;
+  }
 
   .twoColumn, .portfolio .container {
     margin-left: 0;
@@ -192,9 +195,10 @@
   }
   .hero {
     padding-top: 75px;
-  }
-  .socialLinks ul {
-    margin-top: 0;
+
+    .socialLinks ul {
+      margin-top: 0;
+    }
   }
   .portfolioItem.expanded .moreDetails {
     display: flex;
@@ -208,6 +212,10 @@
       padding: 10px 20px;
       margin: 0;
     }
+  }
+  .contact .socialLinks i {
+    font-size: 1rem;
+    margin-right: 10px;
   }
 }
 

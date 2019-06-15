@@ -4,32 +4,37 @@ const app = {};
 app.nav = () => {
   let lastId,
     topMenu = $("header"),
-    topMenuHeight = topMenu.outerHeight()-10,
+    topMenuHeight = topMenu.outerHeight() - 50,
     // All list items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      let item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
+  menuItems = topMenu.find("a"),
+  // Anchors corresponding to menu items
+  scrollItems = menuItems.map(function(){
+    let item = $($(this).attr("href"));
+    if (item.length) { return item; }
+  });
 
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-menuItems.click(function(e){
-  e.target.blur()
-  let href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({ 
-      scrollTop: offsetTop
-  }, 300);
-  $('#burger').prop('checked', false);
-  e.preventDefault();
-});
+  // Bind click handler to menu items
+  // so we can get a fancy scroll animation
+  menuItems.click(function(e){
+    e.target.blur()
+    let href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    $('html, body').stop().animate({ 
+        scrollTop: offsetTop
+    }, 300);
+    $('#burger').prop('checked', false);
+    e.preventDefault();
+  });
+
+  $('h1').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 300);
+    $('#burger').prop('checked', false);
+  });
 
 // Bind to scroll
   $(window).scroll(function(){
     // Get container scroll position
-    let fromTop = $(this).scrollTop()+topMenuHeight;
+    let fromTop = $(this).scrollTop()+topMenuHeight + 50;
     
     // Get id of current scroll item
     let cur = scrollItems.map(function(){

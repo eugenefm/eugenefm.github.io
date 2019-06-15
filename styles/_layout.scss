@@ -47,6 +47,7 @@ header {
 
   h1 {
     margin: 15px 0;
+    cursor: pointer; 
   }
 
   .wrapper {
@@ -390,6 +391,7 @@ header {
     padding: 10px;
     border: solid 1px $lightText;
     border-radius: 0;
+    -webkit-appearance: none;
     transition: all 500ms cubic-bezier(.25,.8,.25,1);
 
     &:focus{
