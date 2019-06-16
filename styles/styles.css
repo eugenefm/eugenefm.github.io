@@ -785,6 +785,10 @@ header nav .active a:after {
   margin-bottom: 50px;
 }
 
+.resume .button {
+  margin-top: 50px;
+}
+
 .contact {
   background: url("./../assets/bgMap.png") 50% 50%/cover #f6f5ff;
 }
