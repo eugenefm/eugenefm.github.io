@@ -211,6 +211,10 @@ p, li, input, textarea, .secondary, .category {
   color: #6B7494;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 h3 {
   font-size: 2.5rem;
   max-width: 600px;
@@ -1080,9 +1084,9 @@ footer P {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1091,7 +1095,10 @@ footer P {
   }
   .portfolioItem.expanded .moreDetails .button {
     padding: 10px 20px;
-    margin: 0;
+    margin: 5px;
+  }
+  .portfolioItem.expanded .moreDetails .outline {
+    margin-left: 10px;
   }
   .contact .socialLinks i {
     font-size: 1rem;
