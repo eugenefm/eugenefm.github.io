@@ -330,7 +330,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 section {
   padding: 50px 0;
-  min-height: 100vh;
 }
 
 .twoColumn {
@@ -795,6 +794,7 @@ header nav .active a:after {
 
 .contact {
   background: url("./../assets/bgMap.png") 50% 50%/cover #f6f5ff;
+  min-height: 100vh;
 }
 
 .contact .col2 {

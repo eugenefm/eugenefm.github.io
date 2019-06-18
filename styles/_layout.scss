@@ -5,7 +5,6 @@
 }
 section {
   padding: 50px 0;
-  min-height: 100vh;
 }
 
 .twoColumn {
@@ -359,6 +358,7 @@ header {
 }
 .contact {
   background: url('./../assets/bgMap.png') 50% 50% / cover $backgroundShade;
+  min-height: 100vh;
 
   .col2 {
     display: flex;
