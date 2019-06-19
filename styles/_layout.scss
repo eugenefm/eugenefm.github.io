@@ -196,7 +196,7 @@ header {
     flex: 1 1 300px;
     margin: 20px;
     max-width: 500px;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    // transition: all 1s cubic-bezier(.25,.8,.25,1);
   }
   .portfolioPreview {
     width: calc(100% + 40px);
