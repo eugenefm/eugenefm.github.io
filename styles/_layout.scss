@@ -164,12 +164,12 @@ header {
     max-width: 550px;
   }
   .col1 {
-    flex: 1 1 375px;
+    flex: 1 1 200px;
   }
   .col2 {
     display: flex;
     border: 5px solid #f6f5ff;
-    flex: 1 1 375px;
+    flex: 2 1 400px;
     flex-wrap: wrap;
   }
   h5 {

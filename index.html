@@ -74,11 +74,10 @@
     <section class="about" id="about">
       <div class="wrapper">
         <h2>About</h2>
-        <h3>From jack of all trades to master of <span class="highlight">one</span>.</h3>
+        <h3><span class="highlight"></span>Enterprise Web Application Developer</h3>
         <div class="twoColumn">
           <div class="col1 textBox">
-            <p>I am a Web Developer with six years of marketing experience in the non-profit sector. With this background, I have had the opportunity to build a broad toolkit of creative and technical skills. In my previous roles, I did graphic design, email marketing, digital ads, video production, copywriting and everything in-between. In the spring of 2019, I decided to focus my career on the part of my toolkit that I loved the most – web development.</p>    
-            <p>While I have years of experience working with HTML and CSS on corporate Wordpress and Drupal websites, I attended HackerYou's Web Development Bootcamp to learn modern best-practices, web accessibility, JavaScript, jQuery and React. Since completing the bootcamp, I have expanded into full stack development with Node.js, Express and MongoDB. My broad base of experience and modern education make me an ideal candidate for any organization.</p>
+            <p>I am a Full-stack JavaScript Developer with experience working on consumer-facing, enterprise websites and applications. Most recently, I worked on projects for Honda, Acura, Canon and Brookfield while employed as a Front-end Developer at Climax Media. As a developer, I have a passion for working with design systems, developing accessible UIs, and mentoring others in my field.</p>
           </div>
           <div class="col2">
             <h5>My Toolkit</h5>
@@ -87,21 +86,22 @@
               <li><i aria-hidden="true" class="fab fa-css3"></i>CSS3</li>
               <li><i aria-hidden="true" class="fab fa-sass"></i>Sass</li>
               <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
-              <li><i aria-hidden="true" class="devicon-jquery-plain"></i>jQuery</li>
               <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
-              <li><i aria-hidden="true" class="fas fa-project-diagram"></i>APIs</li>
-              <li><i aria-hidden="true" class="fab fa-git-square"></i>Git</li>
-              <li><i aria-hidden="true" class="fab fa-github"></i>GitHub</li>
-              <li><i aria-hidden="true" class="fas fa-code"></i>VS Code</li>
-              <li><i aria-hidden="true" class="fab fa-google"></i>Firebase</li>
-              <li><i aria-hidden="true" class="fab fa-node-js"></i>Node.js</li>
+              <li><i aria-hidden="true" class="fas fa-paint-brush"></i>Styled-components</li>
+              <li><i aria-hidden="true" class="devicon-webpack-plain"></i>Webpack</li>
+              <li><i aria-hidden="true" class="fas fa-server"></i>Jenkins</li>
+              <li><i aria-hidden="true" class="fas fa-check"></i>Jest</li>
+              <li><i aria-hidden="true" class="fab fa-node-js"></i>Node / Express</li>
               <li><i aria-hidden="true" class="devicon-mongodb-plain"></i>MongoDB</li>
+              <li><i aria-hidden="true" class="devicon-angularjs-plain"></i>AngularJS</li>
+              <li><i aria-hidden="true" class="devicon-jquery-plain"></i>jQuery</li>
+              <li><i aria-hidden="true" class="fas fa-project-diagram"></i>REST APIs</li>
+              <li><i aria-hidden="true" class="fab fa-github"></i>Git / GitHub</li>
+              <li><i aria-hidden="true" class="fab fa-google"></i>Firebase</li>
               <li><i aria-hidden="true" class="fab fa-wordpress-simple"></i>Wordpress</li>
-              <li><i aria-hidden="true" class="fab fa-drupal"></i>Drupal</li>
               <li><i aria-hidden="true" class="fas fa-th-large"></i>UI/UX Design</li>
               <li><i aria-hidden="true" class="fab fa-adobe"></i>Adobe CC</li>
               <li><i aria-hidden="true" class="fas fa-envelope-open-text"></i>Email Marketing</li>
-              <li><i aria-hidden="true" class="fas fa-donate"></i>Online Fundraising</li>
             </ul>
           </div>
         </div>
@@ -111,7 +111,53 @@
       <div class="wrapper">
           <h2>Portfolio</h2>
           <h3>Here are some of my recent projects.</h3>
-        <div class="container">  
+        <div class="container"> 
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/Honda.png" alt="A screenshot of the Stockup.ninja app.">
+            </div>
+            <div class="portfolioDescription">
+              <h4>ReactJS SPA</h4>
+              <h5>Honda Credit Application</h5>
+              <p>An online portal for applying for credit on a new Honda or Acura vehicle.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails" aria-live="polite">
+                <p>The user is guided through a multi-stage application to apply for credit. Progress is saved and persisted at every step. Users can invite a co-applicant to fill out their details and add an appraisal for a trade-in vehicle. This application is the first of its kind in Canada allowing customers to qualify for credit on a car without requiring any human review.</p>
+                <ul class="skills">
+                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
+                  <li><i aria-hidden="true" class="fab fa-react"></i>Styled-components</li>
+                  <li><i aria-hidden="true" class="fab fa-react"></i>AngularJS</li>
+                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>APIs</li>
+                  <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
+                </ul>
+                <a href="https://www.acura.ca/apply-for-credit" class="button" target="_blank">Website</a>
+                <button class="shrink" aria-label="Close">X</button>
+              </div>
+            </div>
+          </div> 
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/Canon.png" alt="A screenshot of the Stockup.ninja app.">
+            </div>
+            <div class="portfolioDescription">
+              <h4>ReactJS SPA</h4>
+              <h5>Canon Canada</h5>
+              <p>A web accessibility project to improve WCAG compliance of Canon Canada's consumer website.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails" aria-live="polite">
+                <p>Implemented a number of accesibility improvements to the principle React component library that is served by a Magnolia CMS on Canon.ca.</p>
+                <ul class="skills">
+                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
+                  <li><i aria-hidden="true" class="fab fa-react"></i>Web Accessibility</li>
+                  <li><i aria-hidden="true" class="fab fa-react"></i>Magnolia</li>
+                </ul>
+                <a href="https://canon.ca/en/consumer" class="button" target="_blank">Website</a>
+                <button class="shrink" aria-label="Close">X</button>
+              </div>
+            </div>
+          </div>
           <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/stockThumb.png" alt="A screenshot of the Stockup.ninja app.">
@@ -161,7 +207,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolioItem">
+          <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/whoDevThumb.png" alt="A screenshot of the trivia app.">
             </div>
@@ -211,8 +257,8 @@
                 <button class="shrink" aria-label="Close">X</button>
               </div>
             </div>
-          </div>
-          <div class="portfolioItem">
+          </div> -->
+          <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/c4kThumb.png" alt="A screenshot of the Capitalize for Kids website.">
             </div>
@@ -255,7 +301,7 @@
                 <button class="shrink" aria-label="Close" >X</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -266,6 +312,18 @@
         <div class="twoColumn">
           <div class="col1">
             <h3 class="category">Experience</h3>
+            <div class="resumeItem">
+              <span class="waypoint"></span>
+              <h4>Climax Media</h4>
+              <h5>Front-end Developer <span class="secondary">Sep 2019 - Apr 2020</span></h5>
+              <p>I worked on an agile team building consumer-facing React applications for clients like Honda, Acura and Canon at this enterprise development agency.
+              <ul>
+                <li>Built a design system for a major consumer website using React, Styled-components, Styled-system, and Storybook.</li>
+                <li>Worked with the client and an analytics agency to lead the custom Google Tag Manager implementation on Honda's Online Credit Application.</li>
+                <li>Completed an accessibility revamp of Canon Canada's React component library.</li>
+                <li>Helped recruit, interview and evaluate new developers for the company.</li>
+              </ul>
+            </div>
             <div class="resumeItem">
               <span class="waypoint"></span>
               <h4>Capitalize for Kids</h4>
@@ -321,9 +379,9 @@
             </div>
           </div>
         </div>
-        <a href="./assets/MichasiwWebDevResume.pdf" class="button" target="_blank">
+        <!-- <a href="./assets/MichasiwWebDevResume.pdf" class="button" target="_blank">
             Download Resume
-          </a>
+          </a> -->
       </div>
     </section>
     <section class="contact" id="contact">
