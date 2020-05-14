@@ -344,7 +344,8 @@ section {
           align-items: flex-start;
 }
 
-.twoColumn .col1, .twoColumn .col2 {
+.twoColumn .col1,
+.twoColumn .col2 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 500px;
           flex: 1 1 500px;
@@ -564,6 +565,13 @@ header nav .active a:after {
   background: #f6f5ff;
 }
 
+.portfolio h2,
+.portfolio h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,9 +595,9 @@ header nav .active a:after {
           flex-direction: column;
   border-radius: 0px;
   padding: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 300px;
-          flex: 1 1 300px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 350px;
+          flex: 0 1 350px;
   margin: 20px;
   max-width: 500px;
 }
@@ -731,7 +739,7 @@ header nav .active a:after {
 }
 
 .resume .resumeItem li {
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding-bottom: 10px;
   line-height: 1.5;
 }
@@ -753,7 +761,7 @@ header nav .active a:after {
   background: rgba(255, 255, 255, 0.95);
   padding: 10px;
   line-height: 1.5;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .resume .images img {
@@ -832,7 +840,8 @@ header nav .active a:after {
           flex: 1 1 100%;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
@@ -843,7 +852,8 @@ header nav .active a:after {
   transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.contact input:focus, .contact textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.18);
           box-shadow: 0 10px 12px rgba(0, 0, 0, 0.18);
   border: solid 1px #e1e3ea;
