@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik|Rufina:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 </head>
 <body>
   <header>
@@ -54,7 +54,7 @@
     <section class="hero" id="hero">
       <div class="wrapper">
         <div class="col1">
-          <h2>Web Developer</h2>
+          <h2>Software Developer</h2>
           <h3>I build awesome things on the internet.</h3>
           <div class="socialLinks">
             <ul>
@@ -74,10 +74,12 @@
     <section class="about" id="about">
       <div class="wrapper">
         <h2>About</h2>
-        <h3><span class="highlight"></span>Enterprise Web Application Developer</h3>
+        <h3><span class="highlight"></span>Hi, I'm Eugene!</h3>
         <div class="twoColumn">
           <div class="col1 textBox">
-            <p>I am a Full-stack JavaScript Developer with experience working on consumer-facing, enterprise websites and applications. Most recently, I worked on projects for Honda, Acura, Canon and Brookfield while employed as a Front-end Developer at Climax Media. I have a passion for working with design systems, developing accessible UIs, and mentoring others in my field.</p>
+            <p>I am a Full-stack Developer with experience working on consumer-facing websites and applications. I currently work as a Software Developer for EnPowered, a growing startup that builds data products for the energy sector. </p>
+            <p>Previously, I worked on projects for large enterprise companies like Honda, Acura, and Canon while employed as a Front-end Developer at Climax Media.</p>
+            <p>I have a passion for working with design systems, developing accessible UIs, and mentoring others in my field.</p>
           </div>
           <div class="col2">
             <h5>My Toolkit</h5>
@@ -88,11 +90,12 @@
               <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
               <li><i aria-hidden="true" class="fab fa-react"></i>React / Redux</li>
               <li><i aria-hidden="true" class="devicon-vuejs-plain"></i>Vue / Vuex</li>
+              <li><i aria-hidden="true" class="fab fa-node-js"></i>Node / Express</li>
+              <li><i aria-hidden="true" class="devicon-amazonwebservices-original"></i>AWS</li>
               <li><i aria-hidden="true" class="fas fa-paint-brush"></i>Styled-components</li>
               <li><i aria-hidden="true" class="devicon-webpack-plain"></i>Webpack</li>
               <li><i aria-hidden="true" class="fas fa-server"></i>Jenkins</li>
               <li><i aria-hidden="true" class="fas fa-check"></i>Jest</li>
-              <li><i aria-hidden="true" class="fab fa-node-js"></i>Node / Express</li>
               <li><i aria-hidden="true" class="devicon-mongodb-plain"></i>MongoDB</li>
               <li><i aria-hidden="true" class="devicon-angularjs-plain"></i>AngularJS</li>
               <li><i aria-hidden="true" class="devicon-jquery-plain"></i>jQuery</li>
@@ -115,7 +118,56 @@
         <div class="container"> 
           <div class="portfolioItem">
             <div class="portfolioPreview">
-              <img src="./assets/Honda.png" alt="A screenshot of the Stockup.ninja app.">
+              <img src="./assets/EnPoweredHome.png" alt="Enpowered Homepage Screenshot">
+            </div>
+            <div class="portfolioDescription">
+              <h4>Gatsby Website</h4>
+              <h5>GetEnpowered.com</h5>
+              <p>As the lead developer on the project, I rebuilt EnPowered's marketing website as a statically generated React application.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails" aria-live="polite">
+                <p>The site is managed with NetlifyCMS and uses Gatsby for static generation. Content changes trigger automatic builds which are deployed to an AWS S3 Bucket.</p>
+                <ul class="skills">
+                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
+                  <li><i aria-hidden="true" class="devicon-gatsby-plain"></i>Gatsby</li>
+                  <li><i aria-hidden="true" class="devicon-amazonwebservices-original"></i></i>Amazon S3</li>
+                  <li><i aria-hidden="true" class="fas fa-paint-brush"></i>TailwindCSS</li>
+                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>NetlifyCMS</li>
+                </ul>
+                <a href="https://www.getenpowered.com/" class="button" target="_blank">Website</a>
+                <button class="shrink" aria-label="Close">X</button>
+              </div>
+            </div>
+          </div> 
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/EnPoweredPortal.png" alt="Enpowered Portal Screenshot">
+            </div>
+            <div class="portfolioDescription">
+              <h4>React SPA + Cloud Microservices</h4>
+              <h5>EnPowered Portal</h5>
+              <p>Enpowered's customer portal for accessing electricity usage and projection data.</p>
+              <button class="expand">More Details</button>
+              
+              <div class="moreDetails" aria-live="polite">
+                <p>Our team rebuilt EnPowered's customer portal as a modern React application. Instead of using a state management system like Redux, the functional architecture employs React-Query for fetching and limits the need for global state.</p>
+                <p>The application is built on a serverless architecture. The frontend is served from an S3 Bucket with CloudfFont while the backend microservices are deployed as AWS Lambda functions.</p>
+                <ul class="skills">
+                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
+                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>React-Query</li>
+                  <li><i aria-hidden="true" class="devicon-amazonwebservices-original"></i>AWS</li>
+                  <li><i aria-hidden="true" class="fas fa-paint-brush"></i>TailwindCSS</li>
+                  <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
+                </ul>
+                <a href="https://portal.getenpowered.com/#/login" class="button" target="_blank">Website</a>
+                <button class="shrink" aria-label="Close">X</button>
+              </div>
+            </div>
+          </div> 
+          <div class="portfolioItem">
+            <div class="portfolioPreview">
+              <img src="./assets/Honda.png" alt="Honda Logo">
             </div>
             <div class="portfolioDescription">
               <h4>React SPA</h4>
@@ -139,7 +191,7 @@
           </div> 
           <div class="portfolioItem">
             <div class="portfolioPreview">
-              <img src="./assets/Canon.png" alt="A screenshot of the Stockup.ninja app.">
+              <img src="./assets/Canon.png" alt="Canon Homepage">
             </div>
             <div class="portfolioDescription">
               <h4>React UI Library</h4>
@@ -183,7 +235,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolioItem">
+          <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/stockThumb.png" alt="A screenshot of the Stockup.ninja app.">
             </div>
@@ -231,7 +283,7 @@
                 <button class="shrink" aria-label="Close">X</button>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/whoDevThumb.png" alt="A screenshot of the trivia app.">
@@ -339,6 +391,16 @@
             <h3 class="category">Experience</h3>
             <div class="resumeItem">
               <span class="waypoint"></span>
+              <h4>EnPowered</h4>
+              <h5>Software Developer <span class="secondary">June 2020 - Present</span></h5>
+              <ul>
+                <li>Led the redevelopment of EnPowered's marketing website using React, Gatsby, and NetlifyCMS. Built CI/CD pipelines to trigger new builds from content changes and deploy static assets to Amazon S3.</li>
+                <li>Worked on a rebuild of EnPowered's customer portal, a React app that uses Tailwind for styling and React-Query for data fetching.</li>
+                <li>Built a serverless microservice using AWS Lambda, S3, Cloudformation, HTTPGateway, SES and DynamoDB.</li>
+              </ul>
+            </div>
+            <div class="resumeItem">
+              <span class="waypoint"></span>
               <h4>Climax Media</h4>
               <h5>Front-end Developer <span class="secondary">Sep 2019 - Apr 2020</span></h5>
               <p>I worked on an agile team building consumer-facing React applications for clients like Honda, Acura and Canon at this enterprise development agency.
@@ -391,16 +453,14 @@
               <div class="secondary">Sep 2009 - Apr 2013</div>
             </div>
             <div class="images">
-              <figure>
+              <!-- <figure>
                 <figcaption>Bridgewater Associates Co-CIO, Bob Prince at the 2018 Capitalize for Kids Investor's Conference.</figcaption>
                 <img src="./assets/bobPrince.jpg" alt="Bridgewater Associates' Bob Prince at the Capitalize for Kids Investor's Conference.">
               </figure>
               <figure>
                 <figcaption>Athletes competing at the 2019 Bay Street Games.</figcaption>
                 <img src="./assets/bsg.jpg" alt="Athletes competing at the 2019 Bay Street Games.">
-              </figure>
-              
-              
+              </figure> -->
             </div>
           </div>
         </div>
