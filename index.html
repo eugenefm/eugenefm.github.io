@@ -1,262 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Eugene Michasiw | Web Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Eugene Michasiw | Web Developer</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-  <link rel="manifest" href="./assets/site.webmanifest">
-  <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#fe3d50">
-  <link rel="shortcut icon" href="./assets/favicon.ico">
-  <meta name="msapplication-TileColor" content="#f6f5ff">
-  <meta name="msapplication-config" content="./assets/browserconfig.xml">
-  <meta name="theme-color" content="#f6f5ff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/safari-pinned-tab.svg"
+      color="#fe3d50"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#f6f5ff" />
+    <meta name="msapplication-config" content="./assets/browserconfig.xml" />
+    <meta name="theme-color" content="#f6f5ff" />
 
-  <meta property="og:title" content="Eugene Michasiw | Web Developer">
-  <meta property="og:description" content="I build things on the internet.">
-  <meta property="og:image" content="https://michasiw.com/assets/socialPreview.png">
-  <meta property="og:url" content="https://michasiw.com/">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Eugene Michasiw | Web Developer" />
+    <meta property="og:description" content="I build things on the internet." />
+    <meta
+      property="og:image"
+      content="https://michasiw.com/assets/socialPreview.png"
+    />
+    <meta property="og:url" content="https://michasiw.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik|Rufina:700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-</head>
-<body>
-  <header>
-    <div class="wrapper">
-      <h1>Eugene <span class="highlight">M</span>ichasiw</h1>
-      <div class="menu">
-        <input id="burger" type="checkbox" />
-        <label for="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav id="nav">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero" id="hero">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik|Rufina:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css"
+    />
+  </head>
+  <body>
+    <header>
       <div class="wrapper">
-        <div class="col1">
-          <h2>Software Developer</h2>
-          <h3>I build awesome things on the internet.</h3>
-          <div class="socialLinks">
+        <h1>Eugene <span class="highlight">M</span>ichasiw</h1>
+        <div class="menu">
+          <input id="burger" type="checkbox" />
+          <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav id="nav">
             <ul>
-              <li><a href="mailto:eugene@michasiw.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/eugenefm/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/eugene_fm" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="https://medium.com/@eugenefm" target="_blank" aria-label="Medium"><i class="fab fa-medium-m" aria-hidden="true"></i></a></li>
-              <li><a href="https://github.com/eugenefm/" target="_blank" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="col2">
-          <img src="./assets/headshot.png" alt="Eugene Michasiw">
+          </nav>
         </div>
       </div>
-    </section>
-    <section class="about" id="about">
-      <div class="wrapper">
-        <h2>About</h2>
-        <h3><span class="highlight"></span>Hi, I'm Eugene!</h3>
-        <div class="twoColumn">
-          <div class="col1 textBox">
-            <p>I am a Full-stack Developer with experience working on consumer-facing websites and applications. I am currently on contract with TELUS Digital, leading the technical rollout of their new Allium Design System. </p>
-            <p>My previous experience includes building modern, serverless microservices and front-end applications for startups and large enterprise companies like Honda, Acura, and Canon.</p>
-            <p>I have a passion for working with design systems, developing accessible UIs, and mentoring others in my field.</p>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="wrapper">
+          <div class="col1">
+            <h2>Software Developer</h2>
+            <h3>I build awesome things on the internet.</h3>
+            <div class="socialLinks">
+              <ul>
+                <li>
+                  <a href="mailto:eugene@michasiw.com" aria-label="Email"
+                    ><i class="far fa-envelope" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/eugenefm/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/eugene_fm"
+                    target="_blank"
+                    aria-label="Twitter"
+                    ><i class="fab fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://medium.com/@eugenefm"
+                    target="_blank"
+                    aria-label="Medium"
+                    ><i class="fab fa-medium-m" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/eugenefm/"
+                    target="_blank"
+                    aria-label="Github"
+                    ><i class="fab fa-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="col2">
-            <h5>My Toolkit</h5>
-            <ul class="skills">
-              <li><i aria-hidden="true" class="fab fa-html5"></i>HTML5</li>
-              <li><i aria-hidden="true" class="fab fa-css3"></i>CSS3</li>
-              <li><i aria-hidden="true" class="fab fa-sass"></i>Sass</li>
-              <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
-              <li><i aria-hidden="true" class="fab fa-react"></i>React / Redux</li>
-              <li><i aria-hidden="true" class="devicon-vuejs-plain"></i>Vue / Vuex</li>
-              <li><i aria-hidden="true" class="fab fa-node-js"></i>Node / Express</li>
-              <li><i aria-hidden="true" class="devicon-amazonwebservices-original"></i>AWS</li>
-              <li><i aria-hidden="true" class="fas fa-paint-brush"></i>Styled-components</li>
-              <li><i aria-hidden="true" class="devicon-webpack-plain"></i>Webpack</li>
-              <li><i aria-hidden="true" class="fas fa-server"></i>Jenkins</li>
-              <li><i aria-hidden="true" class="fas fa-check"></i>Jest</li>
-              <li><i aria-hidden="true" class="devicon-mongodb-plain"></i>MongoDB</li>
-              <li><i aria-hidden="true" class="devicon-angularjs-plain"></i>AngularJS</li>
-              <li><i aria-hidden="true" class="devicon-jquery-plain"></i>jQuery</li>
-              <li><i aria-hidden="true" class="fas fa-project-diagram"></i>REST APIs</li>
-              <li><i aria-hidden="true" class="fab fa-github"></i>Git / GitHub</li>
-              <li><i aria-hidden="true" class="fab fa-google"></i>Firebase</li>
-              <li><i aria-hidden="true" class="fab fa-wordpress-simple"></i>Wordpress</li>
-              <li><i aria-hidden="true" class="fas fa-th-large"></i>UI/UX Design</li>
-              <li><i aria-hidden="true" class="fab fa-adobe"></i>Adobe CC</li>
-              <li><i aria-hidden="true" class="fas fa-envelope-open-text"></i>Email Marketing</li>
-            </ul>
+            <img src="./assets/headshot.png" alt="Eugene Michasiw" />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <div class="wrapper">
+      </section>
+      <section class="about" id="about">
+        <div class="wrapper">
+          <h2>About</h2>
+          <h3><span class="highlight"></span>Hi, I'm Eugene!</h3>
+          <div class="twoColumn">
+            <div class="col1 textBox">
+              <p>
+                I am a Full-stack Developer with experience working on a variety
+                of consumer-facing websites and applications. I have worked on
+                product engineering teams for companies ranging in size from
+                small startups to large enterprises.
+              </p>
+              <p>
+                >I am an expert in Design System engineering and have worked on
+                systems for Telus, Honda, Canon and EnPowered. In my current
+                role as a Senior Software Developer on the Front-end Services
+                team at VTS, I lead all design system engineering efforts for
+                the company.
+              </p>
+            </div>
+            <div class="col2">
+              <h5>My Toolkit</h5>
+              <ul class="skills">
+                <li><i aria-hidden="true" class="fab fa-html5"></i>HTML5</li>
+                <li><i aria-hidden="true" class="fab fa-css3"></i>CSS3</li>
+                <li><i aria-hidden="true" class="fab fa-sass"></i>Sass</li>
+                <li>
+                  <i aria-hidden="true" class="fab fa-js-square"></i>JavaScript
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fab fa-react"></i>React /
+                  React-Native
+                </li>
+                <li>
+                  <i aria-hidden="true" class="devicon-vuejs-plain"></i>Vue /
+                  Vuex
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fab fa-node-js"></i>Node /
+                  Express
+                </li>
+                <li>
+                  <i
+                    aria-hidden="true"
+                    class="devicon-amazonwebservices-original"
+                  ></i
+                  >AWS
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fas fa-paint-brush"></i
+                  >Styled-components
+                </li>
+                <li>
+                  <i aria-hidden="true" class="devicon-webpack-plain"></i
+                  >Webpack
+                </li>
+                <li><i aria-hidden="true" class="fas fa-server"></i>Jenkins</li>
+                <li><i aria-hidden="true" class="fas fa-check"></i>Jest</li>
+                <li>
+                  <i aria-hidden="true" class="devicon-mongodb-plain"></i
+                  >MongoDB
+                </li>
+                <li>
+                  <i aria-hidden="true" class="devicon-angularjs-plain"></i
+                  >AngularJS
+                </li>
+                <li>
+                  <i aria-hidden="true" class="devicon-jquery-plain"></i>jQuery
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fas fa-project-diagram"></i>REST
+                  APIs
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fab fa-github"></i>Git / GitHub
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fab fa-google"></i>Firebase
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fab fa-wordpress-simple"></i
+                  >Wordpress
+                </li>
+                <li>
+                  <i aria-hidden="true" class="fas fa-th-large"></i>UI/UX Design
+                </li>
+                <li><i aria-hidden="true" class="fab fa-adobe"></i>Adobe CC</li>
+                <li>
+                  <i aria-hidden="true" class="fas fa-envelope-open-text"></i
+                  >Email Marketing
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="wrapper">
           <h2>Portfolio</h2>
           <h3>Here are some of my recent projects.</h3>
-        <div class="container"> 
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/AlliumScreenshot.png" alt="Allium Design System">
-            </div>
-            <div class="portfolioDescription">
-              <h4>React Design System</h4>
-              <h5>TELUS Digital</h5>
-              <p>As the Technical Lead on TELUS Digital's Allium Design System, I supported the rollout of the system to engineering teams across the organization.</p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails" aria-live="polite">
-                <p>I led a team of developers to build components, features and bug fixes. I supported adoption through educational sessions, documentation and triaging support requests.</p>
-                <ul class="skills">
-                  <li><i aria-hidden="true" class="fab fa-react"></i>React/React-Native</li>
-                  <li><i aria-hidden="true" class="fas fa-paint-brush"></i>Styled-Components</li>
-                </ul>
-                <a href="https://telus.github.io/allium-design-system/" class="button" target="_blank">Documentation Website</a>
-                <button class="shrink" aria-label="Close">X</button>
+          <div class="container">
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img
+                  src="./assets/terraScreenshot.png"
+                  alt="Terra Design System"
+                />
+              </div>
+              <div class="portfolioDescription">
+                <h4>React Design System</h4>
+                <h5>VTS</h5>
+                <p>
+                  As the lead engineer on VTS's Front-end Services Squad, I lead
+                  the work to unify the company's applications on a single
+                  design system.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    I developed new components, implemented a strategy for
+                    theming, supported innersource contributions and assisted in
+                    implementations.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i
+                      >React/React-Native
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-paint-brush"></i
+                      >Tailwind
+                    </li>
+                  </ul>
+                  <a
+                    href="https://terra.vts.com/"
+                    class="button"
+                    target="_blank"
+                    >Documentation Website</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/EnPoweredHome.png" alt="Enpowered Homepage Screenshot">
-            </div>
-            <div class="portfolioDescription">
-              <h4>Gatsby Website</h4>
-              <h5>GetEnpowered.com</h5>
-              <p>As the lead developer on the project, I rebuilt EnPowered's marketing website as a statically generated React application.</p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails" aria-live="polite">
-                <p>The site is managed with NetlifyCMS and uses Gatsby for static generation. Content changes trigger automatic builds which are deployed to an AWS S3 Bucket.</p>
-                <ul class="skills">
-                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
-                  <li><i aria-hidden="true" class="devicon-gatsby-plain"></i>Gatsby</li>
-                  <li><i aria-hidden="true" class="devicon-amazonwebservices-original"></i></i>Amazon S3</li>
-                  <li><i aria-hidden="true" class="fas fa-paint-brush"></i>TailwindCSS</li>
-                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>NetlifyCMS</li>
-                </ul>
-                <a href="https://www.getenpowered.com/" class="button" target="_blank">Website</a>
-                <button class="shrink" aria-label="Close">X</button>
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img
+                  src="./assets/AlliumScreenshot.png"
+                  alt="Allium Design System"
+                />
+              </div>
+              <div class="portfolioDescription">
+                <h4>React Design System</h4>
+                <h5>TELUS Digital</h5>
+                <p>
+                  As the Technical Lead on TELUS Digital's Allium Design System,
+                  I supported the rollout of the system to engineering teams
+                  across the organization.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    I led a team of developers to build components, features and
+                    bug fixes. I supported adoption through educational
+                    sessions, documentation and triaging support requests.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i
+                      >React/React-Native
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-paint-brush"></i
+                      >Styled-Components
+                    </li>
+                  </ul>
+                  <a
+                    href="https://telus.github.io/allium-design-system/"
+                    class="button"
+                    target="_blank"
+                    >Documentation Website</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/EnPoweredPortal.png" alt="Enpowered Portal Screenshot">
-            </div>
-            <div class="portfolioDescription">
-              <h4>React SPA + Cloud Microservices</h4>
-              <h5>EnPowered Portal</h5>
-              <p>Enpowered's customer portal for accessing electricity usage and projection data.</p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails" aria-live="polite">
-                <p>Our team rebuilt EnPowered's customer portal as a modern React application. Instead of using a state management system like Redux, the functional architecture employs React-Query for fetching and limits the need for global state.</p>
-                <p>The application is built on a serverless architecture. The frontend is served from an S3 Bucket with CloudfFont while the backend microservices are deployed as AWS Lambda functions.</p>
-                <ul class="skills">
-                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
-                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>React-Query</li>
-                  <li><i aria-hidden="true" class="devicon-amazonwebservices-original"></i>AWS</li>
-                  <li><i aria-hidden="true" class="fas fa-paint-brush"></i>TailwindCSS</li>
-                  <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
-                </ul>
-                <a href="https://portal.getenpowered.com/#/login" class="button" target="_blank">Website</a>
-                <button class="shrink" aria-label="Close">X</button>
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img
+                  src="./assets/EnPoweredHome.png"
+                  alt="Enpowered Homepage Screenshot"
+                />
+              </div>
+              <div class="portfolioDescription">
+                <h4>Gatsby Website</h4>
+                <h5>GetEnpowered.com</h5>
+                <p>
+                  As the lead developer on the project, I rebuilt EnPowered's
+                  marketing website as a statically generated React application.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    The site is managed with NetlifyCMS and uses Gatsby for
+                    static generation. Content changes trigger automatic builds
+                    which are deployed to an AWS S3 Bucket.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i>React
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="devicon-gatsby-plain"></i
+                      >Gatsby
+                    </li>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        class="devicon-amazonwebservices-original"
+                      ></i
+                      >Amazon S3
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-paint-brush"></i
+                      >TailwindCSS
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-project-diagram"></i
+                      >NetlifyCMS
+                    </li>
+                  </ul>
+                  <a
+                    href="https://www.getenpowered.com/"
+                    class="button"
+                    target="_blank"
+                    >Website</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/Honda.png" alt="Honda Logo">
-            </div>
-            <div class="portfolioDescription">
-              <h4>React SPA</h4>
-              <h5>Honda Credit Application</h5>
-              <p>An online portal for applying for credit on a new Honda or Acura vehicle.</p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails" aria-live="polite">
-                <p>The user is guided through a multi-stage application to apply for credit. Progress is saved and persisted at every step. Users can invite a co-applicant to fill out their details and add an appraisal for a trade-in vehicle. This application is the first of its kind in Canada allowing customers to qualify for credit on a car without requiring any human review.</p>
-                <ul class="skills">
-                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
-                  <li><i aria-hidden="true" class="fas fa-paint-brush"></i>Styled-components</li>
-                  <li><i aria-hidden="true" class="devicon-angularjs-plain"></i></i>AngularJS</li>
-                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>APIs</li>
-                  <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
-                </ul>
-                <a href="https://www.acura.ca/apply-for-credit" class="button" target="_blank">Website</a>
-                <button class="shrink" aria-label="Close">X</button>
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img
+                  src="./assets/EnPoweredPortal.png"
+                  alt="Enpowered Portal Screenshot"
+                />
+              </div>
+              <div class="portfolioDescription">
+                <h4>React SPA + Cloud Microservices</h4>
+                <h5>EnPowered Portal</h5>
+                <p>
+                  Enpowered's customer portal for accessing electricity usage
+                  and projection data.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    Our team rebuilt EnPowered's customer portal as a modern
+                    React application. Instead of using a state management
+                    system like Redux, the functional architecture employs
+                    React-Query for fetching and limits the need for global
+                    state.
+                  </p>
+                  <p>
+                    The application is built on a serverless architecture. The
+                    frontend is served from an S3 Bucket with CloudfFont while
+                    the backend microservices are deployed as AWS Lambda
+                    functions.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i>React
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-project-diagram"></i
+                      >React-Query
+                    </li>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        class="devicon-amazonwebservices-original"
+                      ></i
+                      >AWS
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-paint-brush"></i
+                      >TailwindCSS
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fab fa-js-square"></i
+                      >JavaScript
+                    </li>
+                  </ul>
+                  <a
+                    href="https://portal.getenpowered.com/#/login"
+                    class="button"
+                    target="_blank"
+                    >Website</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/Canon.png" alt="Canon Homepage">
-            </div>
-            <div class="portfolioDescription">
-              <h4>React UI Library</h4>
-              <h5>Canon Canada</h5>
-              <p>A web accessibility project to improve WCAG compliance of Canon Canada's consumer website.</p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails" aria-live="polite">
-                <p>Implemented a number of accessibility improvements to the principle React component library that is served by a Magnolia CMS on Canon.ca.</p>
-                <ul class="skills">
-                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
-                  <li><i aria-hidden="true" class="fas fa-th-large"></i>Web Accessibility</li>
-                  <li><i aria-hidden="true" class="fas fa-project-diagram"></i>Magnolia</li>
-                </ul>
-                <a href="https://canon.ca/en/consumer" class="button" target="_blank">Website</a>
-                <button class="shrink" aria-label="Close">X</button>
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img src="./assets/Honda.png" alt="Honda Logo" />
+              </div>
+              <div class="portfolioDescription">
+                <h4>React SPA</h4>
+                <h5>Honda Credit Application</h5>
+                <p>
+                  An online portal for applying for credit on a new Honda or
+                  Acura vehicle.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    The user is guided through a multi-stage application to
+                    apply for credit. Progress is saved and persisted at every
+                    step. Users can invite a co-applicant to fill out their
+                    details and add an appraisal for a trade-in vehicle. This
+                    application is the first of its kind in Canada allowing
+                    customers to qualify for credit on a car without requiring
+                    any human review.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i>React
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-paint-brush"></i
+                      >Styled-components
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="devicon-angularjs-plain"></i
+                      >AngularJS
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-project-diagram"></i
+                      >APIs
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fab fa-js-square"></i
+                      >JavaScript
+                    </li>
+                  </ul>
+                  <a
+                    href="https://www.acura.ca/apply-for-credit"
+                    class="button"
+                    target="_blank"
+                    >Website</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolioItem">
-            <div class="portfolioPreview">
-              <img src="./assets/semanticThumb.png" alt="A screenshot of the Stockup.ninja app.">
-            </div>
-            <div class="portfolioDescription">
-              <h4>React NPM Library</h4>
-              <h5>semantic-headings</h5>
-              <p>A React utility for dynamically generating headings with the correct semantic order.</p>
-              <button class="expand">More Details</button>
-              
-              <div class="moreDetails" aria-live="polite">
-                <p>This library exports two React components (<em>H</em> and <em>SemanticSection</em>) that use the Context API to dynamically generate and maintain heading levels from nested sections.</p>
-                <ul class="skills">
-                  <li><i aria-hidden="true" class="fab fa-react"></i>React</li>
-                  <li><i aria-hidden="true" class="fas fa-th-large"></i>Web Accessibility</li>
-                  <li><i aria-hidden="true" class="devicon-webpack-plain"></i>Webpack</li>
-                  <li><i aria-hidden="true" class="fab fa-js-square"></i>JavaScript</li>
-                </ul>
-                <a href="https://www.npmjs.com/package/semantic-headings" class="button" target="_blank">NPM Library</a>
-                <a href="https://github.com/eugenefm/semantic-headings" class="button outline" target="_blank">GitHub</a>
-                <button class="shrink" aria-label="Close">X</button>
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img src="./assets/Canon.png" alt="Canon Homepage" />
+              </div>
+              <div class="portfolioDescription">
+                <h4>React UI Library</h4>
+                <h5>Canon Canada</h5>
+                <p>
+                  A web accessibility project to improve WCAG compliance of
+                  Canon Canada's consumer website.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    Implemented a number of accessibility improvements to the
+                    principle React component library that is served by a
+                    Magnolia CMS on Canon.ca.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i>React
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-th-large"></i>Web
+                      Accessibility
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-project-diagram"></i
+                      >Magnolia
+                    </li>
+                  </ul>
+                  <a
+                    href="https://canon.ca/en/consumer"
+                    class="button"
+                    target="_blank"
+                    >Website</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="portfolioItem">
+            <div class="portfolioItem">
+              <div class="portfolioPreview">
+                <img
+                  src="./assets/semanticThumb.png"
+                  alt="A screenshot of the Stockup.ninja app."
+                />
+              </div>
+              <div class="portfolioDescription">
+                <h4>React NPM Library</h4>
+                <h5>semantic-headings</h5>
+                <p>
+                  A React utility for dynamically generating headings with the
+                  correct semantic order.
+                </p>
+                <button class="expand">More Details</button>
+
+                <div class="moreDetails" aria-live="polite">
+                  <p>
+                    This library exports two React components (<em>H</em> and
+                    <em>SemanticSection</em>) that use the Context API to
+                    dynamically generate and maintain heading levels from nested
+                    sections.
+                  </p>
+                  <ul class="skills">
+                    <li>
+                      <i aria-hidden="true" class="fab fa-react"></i>React
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fas fa-th-large"></i>Web
+                      Accessibility
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="devicon-webpack-plain"></i
+                      >Webpack
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="fab fa-js-square"></i
+                      >JavaScript
+                    </li>
+                  </ul>
+                  <a
+                    href="https://www.npmjs.com/package/semantic-headings"
+                    class="button"
+                    target="_blank"
+                    >NPM Library</a
+                  >
+                  <a
+                    href="https://github.com/eugenefm/semantic-headings"
+                    class="button outline"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <button class="shrink" aria-label="Close">X</button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/stockThumb.png" alt="A screenshot of the Stockup.ninja app.">
             </div>
@@ -305,7 +642,7 @@
               </div>
             </div>
           </div> -->
-          <!-- <div class="portfolioItem">
+            <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/whoDevThumb.png" alt="A screenshot of the trivia app.">
             </div>
@@ -356,7 +693,7 @@
               </div>
             </div>
           </div> -->
-          <!-- <div class="portfolioItem">
+            <!-- <div class="portfolioItem">
             <div class="portfolioPreview">
               <img src="./assets/c4kThumb.png" alt="A screenshot of the Capitalize for Kids website.">
             </div>
@@ -400,95 +737,224 @@
               </div>
             </div>
           </div> -->
-        </div>
-      </div>
-    </section>
-    <section class="resume" id="resume">
-      <div class="wrapper">
-        <h2>Resume</h2>
-        <h3>What I've done and where I did it.</h3>
-        <div class="twoColumn">
-          <div class="col1">
-            <h3 class="category">Experience</h3>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>TELUS Digital</h4>
-              <h5>Senior Full-stack Developer (Contract) <span class="secondary">September 2021 - Present</span></h5>
-              <ul>
-                <li>Technical Lead on TELUS' Allium Design System.</li>
-                <li>Supported the rollout of a new design system across TELUS Digital.</li>
-                <li>Led a team of developers to ship new components, features and bug fixes.</li>
-                <li>Produced documentation, tutorials and video content to drive developer adoption.</li>
-                <li>Gave live presentations to TELUS Digital's various stakeholders and engineering teams to educate them about the system.</li>
-                <li>Supported an innersource contribution model which enabled teams across the organization to contribute to the design system.</li>
-                <li>Technologies I worked with included: JavaScript, React, React-Native, Node, Design Tokens, Styled-Components, and GitHub Actions.</li>
-              </ul>
-            </div>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>EnPowered</h4>
-              <h5>Software Developer <span class="secondary">June 2020 - September 2021</span></h5>
-              <ul>
-                <li>Led the redevelopment of EnPowered's marketing website using React, Gatsby, and NetlifyCMS. Built CI/CD pipelines to trigger new builds from content changes and deploy static assets to Amazon S3.</li>
-                <li>Worked on a rebuild of EnPowered's customer portal, a React app that uses Tailwind for styling and React-Query for data fetching.</li>
-                <li>Built serverless microservices using AWS Lambda, S3, Cloudformation, HTTPGateway, SES and DynamoDB.</li>
-              </ul>
-            </div>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>Climax Media</h4>
-              <h5>Front-end Developer <span class="secondary">Sep 2019 - Apr 2020</span></h5>
-              <p>I worked on an agile team building consumer-facing React applications for clients like Honda, Acura and Canon at this enterprise development agency.
-              <ul>
-                <li>Built a design system for a major consumer website using React, Styled-components, Styled-system, and Storybook.</li>
-                <li>Worked with the client and an analytics agency to lead the custom Google Tag Manager implementation on Honda's Online Credit Application.</li>
-                <li>Completed an accessibility revamp of Canon Canada's React component library.</li>
-                <li>Helped recruit, interview and evaluate new developers for the company.</li>
-              </ul>
-            </div>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>Capitalize for Kids</h4>
-              <h5>Director of Marketing <span class="secondary">Jan 2018 - Apr 2019</span></h5>
-              <h5>Marketing Manager <span class="secondary">May 2016 - Dec 2017</span></h5>
-              <p>I joined Capitalize for Kids to help transform a fundraising event into a full-scale charitable organization. I directed the organization’s marketing strategy while managing vendors, freelancers, and pro-bono partners to execute on our plan.
-              <ul>
-                <li>Managed all marketing and communications for one of Canada's most important capital markets conferences – an event that raised $1.5 million for charity in 2018.</li>
-                <li>Co-founded the Bay Street Games – an event that raised over $230,000 in 2019.</li>
-                <li>Launched a podcast featuring interviews with Canadian business leaders like Michele Romanow, Bruce Croxon and Paul Desmarais III.</li>
-                <li>Led the redesign of the organization's website and was responsible for all updates.</li>
-              </ul>
-            </div>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>Jack.org</h4>
-              <h5>Marketing and Communications Lead <span class="secondary">May 2013 - Apr 2016</span></h5>
-              <ul>
-                <li>Directed all marketing and communications activities for the organization.</li>
-                <li>Managed their website and fundraising portals.</li>
-                <li>Directed a complete rebranding of the organization in partnership with a pro-bono agency.</li>
-                <li>Launched online fundraising at Jack.org and helped raise $250,000 (200% of Goal) at their first fundraising event.</li>
-                <li>Supported the launch of the student chapters program and grew it to 100+ campus chapters with 1,000+ members.</li>
-                <li>Helped grow total revenue from $600,000 to $1.5 million in three years.</li>
-              </ul>
-            </div>
           </div>
-          <div class="col2">
-            <h3 class="category">Education</h3>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>Juno College of Technology (HackerYou)</h4>
-              <h5>Web Development Bootcamp</h5>
-              <div class="secondary">Apr - Jun 2019</div>
+        </div>
+      </section>
+      <section class="resume" id="resume">
+        <div class="wrapper">
+          <h2>Resume</h2>
+          <h3>What I've done and where I did it.</h3>
+          <div class="twoColumn">
+            <div class="col1">
+              <h3 class="category">Experience</h3>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>VTS</h4>
+                <h5>
+                  Senior Full-stack Engineer
+                  <span class="secondary">January 2023 - Present</span>
+                </h5>
+                <ul>
+                  <li>Engineering lead for the Front-end Services Squad.</li>
+                  <li>
+                    Led effort to standardize UI across VTS’ products and
+                    platforms.
+                  </li>
+                  <li>
+                    Decoupled front-end components from applications into
+                    reusable libraries.
+                  </li>
+                  <li>
+                    Built complex front-end components such as a data table that
+                    are widely used across VTS’ products.
+                  </li>
+                  <li>
+                    Supported innersource contributions to design system
+                    libraries from feature squads.
+                  </li>
+                </ul>
+              </div>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>TELUS Digital</h4>
+                <h5>
+                  Senior Full-stack Developer (Contract)
+                  <span class="secondary">September 2021 - December 2022</span>
+                </h5>
+                <ul>
+                  <li>Technical Lead on TELUS' Allium Design System.</li>
+                  <li>
+                    Supported the rollout of a new design system across TELUS
+                    Digital.
+                  </li>
+                  <li>
+                    Led a team of developers to ship new components, features
+                    and bug fixes.
+                  </li>
+                  <li>
+                    Produced documentation, tutorials and video content to drive
+                    developer adoption.
+                  </li>
+                  <li>
+                    Gave live presentations to TELUS Digital's various
+                    stakeholders and engineering teams to educate them about the
+                    system.
+                  </li>
+                  <li>
+                    Supported an innersource contribution model which enabled
+                    teams across the organization to contribute to the design
+                    system.
+                  </li>
+                  <li>
+                    Technologies I worked with included: JavaScript, React,
+                    React-Native, Node, Design Tokens, Styled-Components, and
+                    GitHub Actions.
+                  </li>
+                </ul>
+              </div>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>EnPowered</h4>
+                <h5>
+                  Software Developer
+                  <span class="secondary">June 2020 - September 2021</span>
+                </h5>
+                <ul>
+                  <li>
+                    Led the redevelopment of EnPowered's marketing website using
+                    React, Gatsby, and NetlifyCMS. Built CI/CD pipelines to
+                    trigger new builds from content changes and deploy static
+                    assets to Amazon S3.
+                  </li>
+                  <li>
+                    Worked on a rebuild of EnPowered's customer portal, a React
+                    app that uses Tailwind for styling and React-Query for data
+                    fetching.
+                  </li>
+                  <li>
+                    Built serverless microservices using AWS Lambda, S3,
+                    Cloudformation, HTTPGateway, SES and DynamoDB.
+                  </li>
+                </ul>
+              </div>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>Climax Media</h4>
+                <h5>
+                  Front-end Developer
+                  <span class="secondary">Sep 2019 - Apr 2020</span>
+                </h5>
+                <p>
+                  I worked on an agile team building consumer-facing React
+                  applications for clients like Honda, Acura and Canon at this
+                  enterprise development agency.
+                </p>
+                <ul>
+                  <li>
+                    Built a design system for a major consumer website using
+                    React, Styled-components, Styled-system, and Storybook.
+                  </li>
+                  <li>
+                    Worked with the client and an analytics agency to lead the
+                    custom Google Tag Manager implementation on Honda's Online
+                    Credit Application.
+                  </li>
+                  <li>
+                    Completed an accessibility revamp of Canon Canada's React
+                    component library.
+                  </li>
+                  <li>
+                    Helped recruit, interview and evaluate new developers for
+                    the company.
+                  </li>
+                </ul>
+              </div>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>Capitalize for Kids</h4>
+                <h5>
+                  Director of Marketing
+                  <span class="secondary">Jan 2018 - Apr 2019</span>
+                </h5>
+                <h5>
+                  Marketing Manager
+                  <span class="secondary">May 2016 - Dec 2017</span>
+                </h5>
+                <p>
+                  I joined Capitalize for Kids to help transform a fundraising
+                  event into a full-scale charitable organization. I directed
+                  the organization’s marketing strategy while managing vendors,
+                  freelancers, and pro-bono partners to execute on our plan.
+                </p>
+                <ul>
+                  <li>
+                    Managed all marketing and communications for one of Canada's
+                    most important capital markets conferences – an event that
+                    raised $1.5 million for charity in 2018.
+                  </li>
+                  <li>
+                    Co-founded the Bay Street Games – an event that raised over
+                    $230,000 in 2019.
+                  </li>
+                  <li>
+                    Launched a podcast featuring interviews with Canadian
+                    business leaders like Michele Romanow, Bruce Croxon and Paul
+                    Desmarais III.
+                  </li>
+                  <li>
+                    Led the redesign of the organization's website and was
+                    responsible for all updates.
+                  </li>
+                </ul>
+              </div>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>Jack.org</h4>
+                <h5>
+                  Marketing and Communications Lead
+                  <span class="secondary">May 2013 - Apr 2016</span>
+                </h5>
+                <ul>
+                  <li>
+                    Directed all marketing and communications activities for the
+                    organization.
+                  </li>
+                  <li>Managed their website and fundraising portals.</li>
+                  <li>
+                    Directed a complete rebranding of the organization in
+                    partnership with a pro-bono agency.
+                  </li>
+                  <li>
+                    Launched online fundraising at Jack.org and helped raise
+                    $250,000 (200% of Goal) at their first fundraising event.
+                  </li>
+                  <li>
+                    Supported the launch of the student chapters program and
+                    grew it to 100+ campus chapters with 1,000+ members.
+                  </li>
+                  <li>
+                    Helped grow total revenue from $600,000 to $1.5 million in
+                    three years.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="resumeItem">
-              <span class="waypoint"></span>
-              <h4>Queen's University</h4>
-              <h5>BA, Honours | Film and Media</h5>
-              <div class="secondary">Sep 2009 - Apr 2013</div>
-            </div>
-            <div class="images">
-              <!-- <figure>
+            <div class="col2">
+              <h3 class="category">Education</h3>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>Juno College of Technology (HackerYou)</h4>
+                <h5>Web Development Bootcamp</h5>
+                <div class="secondary">Apr - Jun 2019</div>
+              </div>
+              <div class="resumeItem">
+                <span class="waypoint"></span>
+                <h4>Queen's University</h4>
+                <h5>BA, Honours | Film and Media</h5>
+                <div class="secondary">Sep 2009 - Apr 2013</div>
+              </div>
+              <div class="images">
+                <!-- <figure>
                 <figcaption>Bridgewater Associates Co-CIO, Bob Prince at the 2018 Capitalize for Kids Investor's Conference.</figcaption>
                 <img src="./assets/bobPrince.jpg" alt="Bridgewater Associates' Bob Prince at the Capitalize for Kids Investor's Conference.">
               </figure>
@@ -496,60 +962,105 @@
                 <figcaption>Athletes competing at the 2019 Bay Street Games.</figcaption>
                 <img src="./assets/bsg.jpg" alt="Athletes competing at the 2019 Bay Street Games.">
               </figure> -->
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <a href="./assets/MichasiwWebDevResume.pdf" class="button" target="_blank">
+          <!-- <a href="./assets/MichasiwWebDevResume.pdf" class="button" target="_blank">
             Download Resume
           </a> -->
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="wrapper">
-        <h2>Contact</h2>
-        <h3>Get in touch with me.</h3>
-        <div class="twoColumn">
-          <div class="col1">
-            <form method="POST" action="https://formspree.io/eugene@michasiw.com">
-              <div class="formHalf">
-                <label for="name" class="visuallyHidden">Your name</label>
-                <input type="text" name="name" id="name" placeholder="Your name">
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <h2>Contact</h2>
+          <h3>Get in touch with me.</h3>
+          <div class="twoColumn">
+            <div class="col1">
+              <form
+                method="POST"
+                action="https://formspree.io/eugene@michasiw.com"
+              >
+                <div class="formHalf">
+                  <label for="name" class="visuallyHidden">Your name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div class="formHalf">
+                  <label for="email" class="visuallyHidden">Your email</label>
+                  <input
+                    type="email"
+                    name="_replyto"
+                    id="_replyto"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div class="formFull">
+                  <label for="message" class="visuallyHidden"
+                    >Your Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div class="col2">
+              <div class="socialLinks">
+                <h5>Connect</h5>
+                <ul>
+                  <li>
+                    <a href="mailto:eugene@michasiw.com"
+                      ><i aria-hidden="true" class="far fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/eugenefm/"
+                      target="_blank"
+                      ><i aria-hidden="true" class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/eugene_fm" target="_blank"
+                      ><i aria-hidden="true" class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/@eugenefm" target="_blank"
+                      ><i aria-hidden="true" class="fab fa-medium-m"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/eugenefm/" target="_blank"
+                      ><i aria-hidden="true" class="fab fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
-              <div class="formHalf">
-                <label for="email" class="visuallyHidden">Your email</label>
-                <input type="email" name="_replyto" id="_replyto" placeholder="Your email">
-              </div>
-              <div class="formFull">
-                <label for="message" class="visuallyHidden">Your Message</label>
-                <textarea name="message" id="message" placeholder="Message"></textarea>
-              </div>
-              <div>
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
-          <div class="col2">
-            <div class="socialLinks">
-              <h5>Connect</h5>
-              <ul>
-                <li><a href="mailto:eugene@michasiw.com"><i aria-hidden="true" class="far fa-envelope"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/eugenefm/" target="_blank"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://twitter.com/eugene_fm" target="_blank"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>
-                <li><a href="https://medium.com/@eugenefm" target="_blank"><i aria-hidden="true" class="fab fa-medium-m"></i></a></li>
-                <li><a href="https://github.com/eugenefm/" target="_blank"><i aria-hidden="true" class="fab fa-github"></i></a></li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="wrapper">
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
         <p>Built with <i class="fas fa-heart" aria-label="love"></i> by me.</p>
-    </div>
-  </footer>
-  <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-  <script src="./scripts/script.js"></script>
-</body>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
